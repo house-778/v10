@@ -44,7 +44,6 @@ function searchGames() {
       }
   }
 
-  sortButtonsAlphabetically();
 }
 document.addEventListener('DOMContentLoaded', function() {
     sortButtonsAlphabetically();
