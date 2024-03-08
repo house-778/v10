@@ -5,6 +5,7 @@
 <head>
   <title>House - Login</title>
   <link href="style.css" rel="stylesheet" type="text/css" />
+  <link href="whatsnew.css" rel="stylesheet" type="text/css" />
   <link rel="icon" type="image/x-icon" href="/imges/House-symbol-may-be-unfamiliar-to-users-with-low-computer-literacy.ico">
   
 </head>
@@ -39,6 +40,21 @@
     window.location.href = "mobillog.html";
   }
   </script>
+  <div id="popup-container" class="popup-container">
+    <div class="popup-content">
+        <span class="close-btn" onclick="closePopup()">&times;</span>
+        <h2>What new?</h2>
+        <p>We have exciting new features for you. Check them out now!<br> only on version 10.</p>
+        <ul>
+          <li>More games added (324 games)</li>
+          <li>New background</li>
+          <li>New layout</li>
+          <li>Your games added</li>
+          <li>Most popler games added</li>
+        </ul>
+    </div>
+    <script src="whatnew.js"></script>
+</div>
 </body>
 
 </html>
