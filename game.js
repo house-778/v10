@@ -12,6 +12,21 @@ function getCleanFileName(page) {
 function goToPage(page) {
   window.location.href = page;
 }
+function sortButtonsAlphabetically() {
+    var buttonsContainer = document.getElementById('buttonsContainer');
+    var buttons = Array.from(buttonsContainer.getElementsByClassName('game_button'));
+
+    buttons.sort(function(a, b) {
+        var textA = a.textContent.toLowerCase();
+        var textB = b.textContent.toLowerCase();
+        return textA.localeCompare(textB);
+    });
+
+    buttons.forEach(function(button) {
+        buttonsContainer.appendChild(button);
+    });
+}
+
 function searchGames() {
     var input, filter, buttons, button, i, txtValue;
     input = document.getElementById("searchInput");
@@ -29,7 +44,11 @@ function searchGames() {
             button.style.display = "none";
         }
     }
+  sortButtonsAlphabetically()
 }
+document.addEventListener('DOMContentLoaded', function() {
+    sortButtonsAlphabetically();
+});
 var visitedPages = JSON.parse(localStorage.getItem('visitedPages')) || [];
 var visitedPagesContainer = document.getElementById('visitedPages');
 visitedPagesContainer.innerHTML = '';
