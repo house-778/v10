@@ -28,23 +28,23 @@ function sortButtonsAlphabetically() {
 }
 
 function searchGames() {
-    var input, filter, buttons, button, i, txtValue;
-    input = document.getElementById("searchInput");
-    filter = input.value.toUpperCase();
-    buttons = document.getElementsByClassName("game_button");
+  var input, filter, buttons, button, i, txtValue;
+  input = document.getElementById("searchInput");
+  filter = input.value.toUpperCase();
+  buttons = document.getElementsByClassName("game_button");
 
-    for (i = 0; i < buttons.length; i++) {
-        button = buttons[i];
-        txtValue = button.innerText || button.textContent;
+  for (i = 0; i < buttons.length; i++) {
+      button = buttons[i];
+      txtValue = button.innerText || button.textContent;
 
-        if (txtValue.toUpperCase().indexOf(filter) > -1) {
-            button.style.display = "none";
-            button.style.display = "";
-        } else {
-            button.style.display = "none";
-        }
-    }
-  sortButtonsAlphabetically()
+      if (txtValue.toUpperCase().indexOf(filter) > -1) {
+          button.style.display = "";
+      } else {
+          button.style.display = "none";
+      }
+  }
+
+  sortButtonsAlphabetically();
 }
 document.addEventListener('DOMContentLoaded', function() {
     sortButtonsAlphabetically();
