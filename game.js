@@ -43,7 +43,7 @@ function searchGames() {
           button.style.display = "none";
       }
   }
-
+  sortButtonsAlphabetically();
 }
 document.addEventListener('DOMContentLoaded', function() {
     sortButtonsAlphabetically();
