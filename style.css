@@ -108,3 +108,11 @@ h1{
   width: 100%;
   overflow-x: hidden;
 }
+
+#pass{
+  border-radius: 25px;
+  border: 2px solid #ffffff;
+  padding: 10px; 
+  width: 200px;
+  height: 15px; 
+}
