@@ -35,7 +35,7 @@ function light(){
     window.sessionStorage.background = "light";
 }
 if (window.sessionStorage.background == "gra"){
-    if(fileName == "game.html"){
+    if(fileName == "games.html"){
         var bodyElement = document.body;
         var grab = document.getElementById('gra');
         var darkb = document.getElementById('dark');
@@ -48,7 +48,7 @@ if (window.sessionStorage.background == "gra"){
     bodyElement.classList = [];
     bodyElement.classList.add("gra");
 }else if (window.sessionStorage.background == "light"){
-    if(fileName == "game.html"){
+    if(fileName == "games.html"){
         var bodyElement = document.body;
         var grab = document.getElementById('gra');
         var darkb = document.getElementById('dark');
@@ -61,7 +61,7 @@ if (window.sessionStorage.background == "gra"){
     bodyElement.classList = [];
     bodyElement.classList.add("light");
 }else if (window.sessionStorage.background == "dark"){
-    if(fileName == "game.html"){
+    if(fileName == "games.html"){
         var bodyElement = document.body;
         var grab = document.getElementById('gra');
         var darkb = document.getElementById('dark');
@@ -77,7 +77,7 @@ if (window.sessionStorage.background == "gra"){
     var bodyElement = document.body;
     var fullPath = window.location.pathname;
     var fileName = fullPath.split('/').pop();
-    if(fileName == "game.html"){
+    if(fileName == "games.html"){
         var bodyElement = document.body;
         var grab = document.getElementById('gra');
         var darkb = document.getElementById('dark');

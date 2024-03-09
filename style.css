@@ -23,7 +23,7 @@
 
 
 
-.gra button, input[type=password], input[type=text] {
+.gra button, input[type=password], input[type=text], #searchInput{
   background-color: #000000;
   border: 1px solid #555555;
   color: #ffffff;
@@ -72,6 +72,7 @@ input[type=text] {
 input[type=text]:focus {
   width: 90%;
   text-align: center;
+  margin: auto;
 }
 .hiden, .hidden {
   display: none;
@@ -99,9 +100,9 @@ input[type=text]:focus {
   overflow-x: hidden;
 }
 
-.dark button, input[type=password], input[type=text] {
+.dark button, input[type=password], input[type=text], #searchInput {
   background-color: #d8d7d7;
-  border: 1px solid #535353;
+  border: 1px solid #9C27B0;
   color: #000000;
   border-radius: 5px;
   padding: 10px;
@@ -145,7 +146,7 @@ input[type=text]:focus {
   overflow-x: hidden;
 }
 
-.light button, input[type=password], input[type=text] {
+.light button, input[type=password], input[type=text], #searchInput {
   background-color: #000000;
   border: 1px solid #535353;
   color: #ffffff;
