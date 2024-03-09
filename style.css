@@ -1,4 +1,4 @@
-body {
+.gra{
   height: 100vh;
   width: 100%;
   cursor: pointer;
@@ -23,7 +23,7 @@ body {
 
 
 
-button, input[type=password], input[type=text] {
+.gra button, input[type=password], input[type=text] {
   background-color: #000000;
   border: 1px solid #555555;
   color: #ffffff;
@@ -34,15 +34,21 @@ button, input[type=password], input[type=text] {
   box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);
 }
 
-button:hover {
+.gra button:hover {
   transform: scale(1.1);
   background-color: #555555;
   border: 1px solid #ffffff;
   color: #ffffff;
   box-shadow: 4px 4px 10px rgba(250, 250, 250, 0.5);
 }
+.gra h1 {
+  color: #ffffff;
+  font-size: 36px;
+  font-weight: bold;
+  /*margin-top: 50px;*/
+}
 
-input[type=password], input[type=text] {
+input [type=password], input[type=text] {
   width: 130px;
   text-align: left;
 }
@@ -56,14 +62,6 @@ input[type=text]:focus {
   width: 90%;
   text-align: center;
 }
-
-h1 {
-  color: #ffffff;
-  font-size: 36px;
-  font-weight: bold;
-  /*margin-top: 50px;*/
-}
-
 .hiden, .hidden {
   display: none;
 }
@@ -79,13 +77,75 @@ h1 {
   overflow-x: hidden;
 }
 
-#pass {
-  margin: auto;
-  text-align: center;
-  font-size: 15px;
-  border-radius: 25px;
-  border: 2px solid #ffffff;
+
+
+.dark{
+  height: 100vh;
+  width: 100%;
+  cursor: pointer;
+  background: #000000;
+  background-size: 400% 400%;
+  overflow-x: hidden;
+}
+
+.dark button, input[type=password], input[type=text] {
+  background-color: #d8d7d7;
+  border: 1px solid #535353;
+  color: #000000;
+  border-radius: 5px;
   padding: 10px;
-  width: 200px;
-  height: 15px;
+  font-size: 16px;
+  cursor: pointer;
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+.dark button:hover {
+  transform: scale(1.1);
+  background-color: #d8d7d7;
+  border: 1px solid #535353;
+  color: #ffffff;
+  box-shadow: 4px 4px 10px rgba(255, 255, 255, 0.5);
+}
+
+
+.dark h1 {
+  color: #ffffff;
+  font-size: 36px;
+  font-weight: bold;
+  /*margin-top: 50px;*/
+}
+
+.light{
+  height: 100vh;
+  width: 100%;
+  cursor: pointer;
+  background: #ffffff;
+  background-size: 400% 400%;
+  overflow-x: hidden;
+}
+
+.light button, input[type=password], input[type=text] {
+  background-color: #000000;
+  border: 1px solid #535353;
+  color: #ffffff;
+  border-radius: 5px;
+  padding: 10px;
+  font-size: 16px;
+  cursor: pointer;
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+.light button:hover {
+  transform: scale(1.1);
+  background-color: #ffffff;
+  border: 1px solid #535353;
+  color: #000000;
+  box-shadow: 4px 4px 10px rgba(255, 255, 255, 0.5);
+}
+
+.light h1 {
+  color: #000000;
+  font-size: 36px;
+  font-weight: bold;
+  /*margin-top: 50px;*/
 }
