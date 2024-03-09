@@ -58,7 +58,6 @@ if (window.sessionStorage.background == "gra"){
         darkb.style.display = 'block';
         lightb.style.display = 'none';
     }
-    bodyElement.classList = [];
     bodyElement.classList.add("gra");
     window.sessionStorage.background = "gra";
 }
