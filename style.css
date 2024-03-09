@@ -48,6 +48,14 @@
   /*margin-top: 50px;*/
 }
 
+.gra #pass{
+  border-radius: 25px;
+  border: 2px solid #ffffff;
+  padding: 10px; 
+  width: 200px;
+  height: 15px; 
+}
+
 input [type=password], input[type=text] {
   width: 130px;
   text-align: left;
@@ -114,6 +122,13 @@ input[type=text]:focus {
   font-weight: bold;
   /*margin-top: 50px;*/
 }
+.dark #pass{
+  border-radius: 25px;
+  border: 2px solid #ffffff;
+  padding: 10px; 
+  width: 200px;
+  height: 15px; 
+}
 
 .light{
   height: 100vh;
@@ -148,4 +163,12 @@ input[type=text]:focus {
   font-size: 36px;
   font-weight: bold;
   /*margin-top: 50px;*/
+}
+
+.dark #pass{
+  border-radius: 25px;
+  border: 2px solid #000000;
+  padding: 10px; 
+  width: 200px;
+  height: 15px; 
 }
