@@ -13,18 +13,17 @@ function goToPage(page) {
   window.location.href = page;
 }
 function sortButtonsAlphabetically() {
-    var buttonsContainer = document.getElementById('buttonsContainer');
-    var buttons = Array.from(buttonsContainer.getElementsByClassName('game_button'));
+  var buttons = Array.from(document.getElementsByClassName('game_button'));
 
-    buttons.sort(function(a, b) {
-        var textA = a.textContent.toLowerCase();
-        var textB = b.textContent.toLowerCase();
-        return textA.localeCompare(textB);
-    });
+  buttons.sort(function(a, b) {
+      var textA = a.textContent.toLowerCase();
+      var textB = b.textContent.toLowerCase();
+      return textA.localeCompare(textB);
+  });
 
-    buttons.forEach(function(button) {
-        buttonsContainer.appendChild(button);
-    });
+  buttons.forEach(function(button) {
+      buttonsContainer.appendChild(button);
+  });
 }
 
 function searchGames() {
