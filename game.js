@@ -39,7 +39,7 @@ function goToPage(page) {
 
 var visitedPages = JSON.parse(localStorage.getItem('visitedPages')) || [];
 var visitedPagesContainer = document.getElementById('visitedPages');
-visitedPagesContainer.innerHTML = '';
+
 
 if (visitedPages.length === 0) {
   visitedPagesContainer.innerHTML = '<p style="color: #fff;">You have not played any games on this computer yet.</p>';
