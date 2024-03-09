@@ -62,6 +62,19 @@ hr{
   border: 1px solid #ffffff;
 }
 
+input[type=password] {
+  background-color: #000000;
+  border: 1px solid #ffffff;
+  color: #ffffff;
+  border-radius: 5px;
+  padding: 10px;
+  font-size: 16px;
+  cursor: pointer;
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);
+  width: 130px;
+  text-align: left;
+}
+
 input[type=text] {
   background-color: #000000;
   border: 1px solid #ffffff;
