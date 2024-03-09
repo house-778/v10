@@ -49,6 +49,9 @@
 }
 
 .gra #pass{
+  margin: auto;
+  text-align: center;
+  font-size: 15px;
   border-radius: 25px;
   border: 2px solid #ffffff;
   padding: 10px; 
@@ -123,6 +126,9 @@ input[type=text]:focus {
   /*margin-top: 50px;*/
 }
 .dark #pass{
+  margin: auto;
+  text-align: center;
+  font-size: 15px;
   border-radius: 25px;
   border: 2px solid #ffffff;
   padding: 10px; 
@@ -166,6 +172,9 @@ input[type=text]:focus {
 }
 
 .dark #pass{
+  margin: auto;
+  text-align: center;
+  font-size: 15px;
   border-radius: 25px;
   border: 2px solid #000000;
   padding: 10px; 

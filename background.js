@@ -35,14 +35,41 @@ function light(){
     window.sessionStorage.background = "light";
 }
 if (window.sessionStorage.background == "gra"){
+    if(fileName == "game.html"){
+        var bodyElement = document.body;
+        var grab = document.getElementById('gra');
+        var darkb = document.getElementById('dark');
+        var lightb = document.getElementById('light');
+        grab.style.display = 'none';
+        darkb.style.display = 'block';
+        lightb.style.display = 'none';
+    }
     var bodyElement = document.body;
     bodyElement.classList = [];
     bodyElement.classList.add("gra");
 }else if (window.sessionStorage.background == "light"){
+    if(fileName == "game.html"){
+        var bodyElement = document.body;
+        var grab = document.getElementById('gra');
+        var darkb = document.getElementById('dark');
+        var lightb = document.getElementById('light');
+        grab.style.display = 'none';
+        darkb.style.display = 'block';
+        lightb.style.display = 'none';
+    }
     var bodyElement = document.body;
     bodyElement.classList = [];
     bodyElement.classList.add("light");
 }else if (window.sessionStorage.background == "dark"){
+    if(fileName == "game.html"){
+        var bodyElement = document.body;
+        var grab = document.getElementById('gra');
+        var darkb = document.getElementById('dark');
+        var lightb = document.getElementById('light');
+        grab.style.display = 'none';
+        darkb.style.display = 'block';
+        lightb.style.display = 'none';
+    }
     var bodyElement = document.body;
     bodyElement.classList = [];
     bodyElement.classList.add("dark");
