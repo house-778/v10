@@ -22,25 +22,26 @@ function searchGames() {
 }
 
 window.addEventListener('load', () => sortButtonsAlphabetically());
-
 function getCleanFileName(page) {
-  const fileName = page.split('/').pop().replace('_new', '').replace(/_/g, ' ').replace(/-/g, ' ').replace(/.html/g, '');
+  var pathArray = page.split('/');
+  var fileName = pathArray.pop();
+  fileName = fileName.replace('_new', '');
+  fileName = fileName.replace(/_/g, ' ');
+  fileName = fileName.replace(/-/g, ' ');
+  fileName = fileName.replace(/.html/g, '');
   return fileName;
 }
-
 function goToPage(page) {
   window.location.href = page;
 }
-
-const visitedPages = JSON.parse(localStorage.getItem('visitedPages')) || [];
-const visitedPagesContainer = document.getElementById('visitedPages');
+var visitedPages = JSON.parse(localStorage.getItem('visitedPages')) || [];
+var visitedPagesContainer = document.getElementById('visitedPages');
 visitedPagesContainer.innerHTML = '';
-
 if (visitedPages.length === 0) {
-  visitedPagesContainer.innerHTML += '<p style="color: #fff;">You have not played any games on this computer yet.</p>';
+  visitedPagesContainer.innerHTML += '<p style = "color: #fff;">You have not played any games on this conputer yet.</p>';
 } else {
-  visitedPages.forEach((page) => {
-    const cleanFileName = getCleanFileName(page);
-    visitedPagesContainer.innerHTML += `<button onclick="goToPage('${page}')">${cleanFileName}</button>`;
+  visitedPages.forEach(function (page) {
+  var cleanFileName = getCleanFileName(page);
+  visitedPagesContainer.innerHTML += `<button onclick="goToPage('${page}')">${cleanFileName}</button>`;
   });
 }
