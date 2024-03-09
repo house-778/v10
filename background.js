@@ -35,7 +35,7 @@ function light(){
     window.sessionStorage.background = "light";
 }
 var bodyElement = document.body;
-if (bodyElement.classList.length === 0) {
+if (window.sessionStorage.background == "") {
     var fullPath = window.location.pathname;
     var fileName = fullPath.split('/').pop();
     if(fileName == "game.html"){
