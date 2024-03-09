@@ -46,7 +46,9 @@ function searchGames() {
     }
   sortButtonsAlphabetically();
 }
-sortButtonsAlphabetically();
+window.addEventListener('load', function() {
+  sortButtonsAlphabetically();
+});
 var visitedPages = JSON.parse(localStorage.getItem('visitedPages')) || [];
 var visitedPagesContainer = document.getElementById('visitedPages');
 visitedPagesContainer.innerHTML = '';
