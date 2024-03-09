@@ -35,6 +35,8 @@ function light(){
     window.sessionStorage.background = "light";
 }
 if (window.sessionStorage.background == "gra"){
+    var fullPath = window.location.pathname;
+    var fileName = fullPath.split('/').pop();
     if(fileName == "games.html"){
         var bodyElement = document.body;
         var grab = document.getElementById('gra');
@@ -48,6 +50,8 @@ if (window.sessionStorage.background == "gra"){
     bodyElement.classList = [];
     bodyElement.classList.add("gra");
 }else if (window.sessionStorage.background == "light"){
+    var fullPath = window.location.pathname;
+    var fileName = fullPath.split('/').pop();
     if(fileName == "games.html"){
         var bodyElement = document.body;
         var grab = document.getElementById('gra');
@@ -61,6 +65,8 @@ if (window.sessionStorage.background == "gra"){
     bodyElement.classList = [];
     bodyElement.classList.add("light");
 }else if (window.sessionStorage.background == "dark"){
+    var fullPath = window.location.pathname;
+    var fileName = fullPath.split('/').pop();
     if(fileName == "games.html"){
         var bodyElement = document.body;
         var grab = document.getElementById('gra');
