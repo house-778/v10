@@ -47,6 +47,7 @@ if (window.sessionStorage.background == "gra"){
     bodyElement.classList = [];
     bodyElement.classList.add("dark");
 }else{
+    var bodyElement = document.body;
     var fullPath = window.location.pathname;
     var fileName = fullPath.split('/').pop();
     if(fileName == "game.html"){
