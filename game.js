@@ -23,7 +23,20 @@ function searchGames() {
 
 window.addEventListener('load', () => sortButtonsAlphabetically());
 
+function getCleanFileName(page) {
+  var pathArray = page.split('/');
+  var fileName = pathArray.pop();
+  fileName = fileName.replace('_new', '');
+  fileName = fileName.replace(/_/g, ' ');
+  fileName = fileName.replace(/-/g, ' ');
+  fileName = fileName.replace(/.html/g, '');
+  return fileName;
+}
 
+
+function goToPage(page) {
+  window.location.href = page;
+}
 
 var visitedPages = JSON.parse(localStorage.getItem('visitedPages')) || [];
 var visitedPagesContainer = document.getElementById('visitedPages');
