@@ -110,6 +110,8 @@ h1{
 }
 
 #pass{
+  text-align: center;
+  font-size: 15px;
   border-radius: 25px;
   border: 2px solid #ffffff;
   padding: 10px; 
