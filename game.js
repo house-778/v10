@@ -13,7 +13,8 @@ function goToPage(page) {
   window.location.href = page;
 }
 function sortButtonsAlphabetically() {
-  var buttons = Array.from(document.getElementsByClassName('game_button'));
+  var buttonsContainer = document.getElementById('buttonsContainer');
+  var buttons = Array.from(buttonsContainer.getElementsByClassName('game_button'));
 
   buttons.sort(function(a, b) {
       var textA = a.textContent.toLowerCase();
