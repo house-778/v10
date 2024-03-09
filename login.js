@@ -16,6 +16,11 @@ document.addEventListener("keydown", function(event) {
     count = userin.length;
     if (count == 1){
         document.getElementById('pass').innerText = "";
+        let dots = '';
+        for (let i = 0; i < count; i++) {
+        dots += '.';
+        }
+        document.getElementById('pass').innerText = dots;
     }else if (count == 0){
         document.getElementById('pass').innerText = "Password...";
     } else{
