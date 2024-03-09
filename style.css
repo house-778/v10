@@ -114,7 +114,7 @@ input[type=text]:focus {
   transform: scale(1.1);
   background-color: #d8d7d7;
   border: 1px solid #535353;
-  color: #ffffff;
+  color: #000000;
   box-shadow: 4px 4px 10px rgba(255, 255, 255, 0.5);
 }
 
@@ -171,7 +171,7 @@ input[type=text]:focus {
   /*margin-top: 50px;*/
 }
 
-.dark #pass{
+.light #pass{
   margin: auto;
   text-align: center;
   font-size: 15px;

@@ -53,8 +53,8 @@ if (window.sessionStorage.background == "gra"){
         var grab = document.getElementById('gra');
         var darkb = document.getElementById('dark');
         var lightb = document.getElementById('light');
-        grab.style.display = 'none';
-        darkb.style.display = 'block';
+        grab.style.display = 'block';
+        darkb.style.display = 'none';
         lightb.style.display = 'none';
     }
     var bodyElement = document.body;
@@ -67,8 +67,8 @@ if (window.sessionStorage.background == "gra"){
         var darkb = document.getElementById('dark');
         var lightb = document.getElementById('light');
         grab.style.display = 'none';
-        darkb.style.display = 'block';
-        lightb.style.display = 'none';
+        darkb.style.display = 'none';
+        lightb.style.display = 'block';
     }
     var bodyElement = document.body;
     bodyElement.classList = [];
