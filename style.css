@@ -97,7 +97,7 @@ input[type=text]:focus {
   height: 100vh;
   width: 100%;
   cursor: pointer;
-  background: linear-gradient(45deg, #ffffff, #949494, #535353, #ffffff);
+  background: linear-gradient(45deg, #000000, #949494, #535353, #000000);
   background-size: 400% 400%;
   animation: gradientAnimation 15s infinite;
   overflow-x: hidden;
@@ -161,7 +161,7 @@ body.dark #searchInput {
   height: 100vh;
   width: 100%;
   cursor: pointer;
-  background: linear-gradient(45deg, #686868, #ffffff, #ffffff, #585858);
+  background: linear-gradient(45deg, #ffffff, #bbbbbb, #c9c9c9, #ffffff);
   background-size: 400% 400%;
   animation: gradientAnimation 15s infinite;
   overflow-x: hidden;
