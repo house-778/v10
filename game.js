@@ -6,7 +6,11 @@ function sortButtonsAlphabetically() {
 
   buttons.forEach(button => buttonsContainer.appendChild(button));
 }
-
+function deleatGameY(){
+  const storedURLs = localStorage.getItem('visitedPages');
+  localStorage.removeItem('visitedPages');
+  createButtons()
+}
 
 function searchGames() {
   const input = document.getElementById("searchInput");
