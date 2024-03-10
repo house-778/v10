@@ -41,12 +41,7 @@ function createButtons() {
     const button = document.createElement('button');
     button.textContent = getCleanButtonText(url);
     button.setAttribute('src', url);
-    container.prepend(button);
+    container.append(button);
   });
 }
 window.onload = createButtons;
-var Deleat = document.getElementById('Deleat');
-Deleat.addEventListener('click', function(event) {
-  event.preventDefault();
-  deleatGameY();
-});
