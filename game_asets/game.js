@@ -791,11 +791,13 @@ function closeq() {
 }
 var currentPage = window.location.pathname;
 var visitedPages = JSON.parse(localStorage.getItem('visitedPages')) || [];
-
-if (!visitedPages.includes(currentPage)) {
-  visitedPages.push(currentPage);
-  localStorage.setItem('visitedPages', JSON.stringify(visitedPages));
+var pageIndex = visitedPages.indexOf(currentPage);
+if (pageIndex !== -1) {
+  visitedPages.splice(pageIndex, 1);
 }
+visitedPages.unshift(currentPage);
+localStorage.setItem('visitedPages', JSON.stringify(visitedPages));
+
 
 function gra(){
   var bodyElement = document.body;
