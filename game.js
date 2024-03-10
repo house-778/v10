@@ -9,6 +9,7 @@ function sortButtonsAlphabetically() {
 function deleatGameY(){
   const storedURLs = localStorage.getItem('visitedPages');
   localStorage.removeItem('visitedPages');
+  document.getElementById("visitedPages").innerHTML = "";
   createButtons()
 }
 
@@ -44,3 +45,8 @@ function createButtons() {
   });
 }
 window.onload = createButtons;
+var Deleat = document.getElementById('Deleat');
+Deleat.addEventListener('click', function(event) {
+  event.preventDefault();
+  deleatGameY();
+});
