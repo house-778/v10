@@ -23,7 +23,10 @@
 
 
 
-.gra button, input[type=password], input[type=text], #searchInput{
+body.gra button,
+body.gra input[type=password],
+body.gra input[type=text],
+body.gra #searchInput {
   background-color: #000000;
   border: 1px solid #555555;
   color: #ffffff;
@@ -94,7 +97,7 @@ input[type=text]:focus {
   height: 100vh;
   width: 100%;
   cursor: pointer;
-  background: linear-gradient(45deg, #000000, #d1d1d1, #cccccc, #000000);
+  background: linear-gradient(45deg, #ffffff, #949494, #535353, #ffffff);
   background-size: 400% 400%;
   animation: gradientAnimation 15s infinite;
   overflow-x: hidden;
@@ -114,7 +117,10 @@ input[type=text]:focus {
 }
 
 
-.dark button, input[type=password], input[type=text], #searchInput {
+body.dark button,
+body.dark input[type=password],
+body.dark input[type=text],
+body.dark #searchInput {
   background-color: #d8d7d7;
   border: 1px solid #535353;
   color: #000000;
@@ -155,7 +161,7 @@ input[type=text]:focus {
   height: 100vh;
   width: 100%;
   cursor: pointer;
-  background: linear-gradient(45deg, #ffffff, #949494, #535353, #ffffff);
+  background: linear-gradient(45deg, #686868, #ffffff, #ffffff, #585858);
   background-size: 400% 400%;
   animation: gradientAnimation 15s infinite;
   overflow-x: hidden;
@@ -174,7 +180,10 @@ input[type=text]:focus {
   }
 }
 
-.light button, input[type=password], input[type=text], #searchInput {
+body.light button,
+body.light input[type=password],
+body.light input[type=text],
+body.light #searchInput {
   background-color: #000000;
   border: 1px solid #535353;
   color: #ffffff;
