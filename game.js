@@ -31,7 +31,7 @@ function getCleanButtonText(url) {
 }
 function createButtons() {
   const urls = getStoredURLs();
-  const container = document.body;
+  const container = document.getElementById('visitedPages');
   urls.forEach(url => {
     const button = document.createElement('button');
     button.textContent = getCleanButtonText(url);
