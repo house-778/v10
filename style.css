@@ -90,15 +90,29 @@ input[type=text]:focus {
 }
 
 
-
 .dark{
   height: 100vh;
   width: 100%;
   cursor: pointer;
-  background: #000000;
+  background: linear-gradient(45deg, #000000, #000000, #9C27B0, #000000);
   background-size: 400% 400%;
+  animation: gradientAnimation 15s infinite;
   overflow-x: hidden;
+  background-attachment: fixed;
 }
+
+@keyframes gradientAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
 
 .dark button, input[type=password], input[type=text], #searchInput {
   background-color: #d8d7d7;
@@ -114,7 +128,7 @@ input[type=text]:focus {
 .dark button:hover {
   transform: scale(1.1);
   background-color: #d8d7d7;
-  border: 1px solid #535353;
+  border: 1px solid #9C27B0;
   color: #000000;
   box-shadow: 4px 4px 10px rgba(255, 255, 255, 0.5);
 }
@@ -141,14 +155,28 @@ input[type=text]:focus {
   height: 100vh;
   width: 100%;
   cursor: pointer;
-  background: #ffffff;
+  background: linear-gradient(45deg, #ffffff, #ffffff, #b3ff00, #ffffff);
   background-size: 400% 400%;
+  animation: gradientAnimation 15s infinite;
   overflow-x: hidden;
+  background-attachment: fixed;
+}
+
+@keyframes gradientAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
 
 .light button, input[type=password], input[type=text], #searchInput {
   background-color: #000000;
-  border: 1px solid #535353;
+  border: 1px solid #b3ff00;
   color: #ffffff;
   border-radius: 5px;
   padding: 10px;
@@ -160,7 +188,7 @@ input[type=text]:focus {
 .light button:hover {
   transform: scale(1.1);
   background-color: #ffffff;
-  border: 1px solid #535353;
+  border: 1px solid #b3ff00;
   color: #000000;
   box-shadow: 4px 4px 10px rgba(255, 255, 255, 0.5);
 }
