@@ -22,30 +22,21 @@ function searchGames() {
 }
 
 window.addEventListener('load', () => sortButtonsAlphabetically());
-
-function getCleanFileName(page) {
-  var pathArray = page.split('/');
-  var fileName = pathArray.pop();
-  fileName = fileName.replace('_new', '');
-  fileName = fileName.replace(/_/g, ' ');
-  fileName = fileName.replace(/-/g, ' ');
-  fileName = fileName.replace(/.html/g, '');
-  return fileName;
+function getStoredURLs() {
+  const storedURLs = localStorage.getItem('visitedPages');
+  return storedURLs ? JSON.parse(storedURLs) : [];
 }
-
-function goToPage(page) {
-  window.location.href = page;
+function getCleanButtonText(url) {
+  return url.split('/').pop().replace(/[-]/g, ' ').replace('_new.html', '');
 }
-
-var visitedPages = JSON.parse(localStorage.getItem('visitedPages')) || [];
-var visitedPagesContainer = document.getElementById('visitedPages');
-
-
-if (visitedPages.length === 0) {
-  visitedPagesContainer.innerHTML = '<p style="color: #fff;">You have not played any games on this computer yet.</p>';
-} else {
-  visitedPages.forEach(function (page) {
-      var cleanFileName = getCleanFileName(page);
-      visitedPagesContainer.insertAdjacentHTML('beforeend', `<button onclick="goToPage('${page}')">${cleanFileName}</button>`);
+function createButtons() {
+  const urls = getStoredURLs();
+  const container = document.body;
+  urls.forEach(url => {
+    const button = document.createElement('button');
+    button.textContent = getCleanButtonText(url);
+    button.setAttribute('src', url);
+    container.appendChild(button);
   });
 }
+window.onload = createButtons;
