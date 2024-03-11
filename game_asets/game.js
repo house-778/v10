@@ -3,7 +3,6 @@ function games() {
     { name: '10 minutes till dawn', link: '/0 - 100/10-minutes-till-dawn_new.html' },
     { name: '11 11', link: '/0 - 100/11-11_new.html' },
     { name: '12 minibattles', link: '/0 - 100/12-minibattles_new.html' },
-    { name: '1v1 lol', link: '/0 - 100/1v1-lol_new.html' },
     { name: '2048 multitask', link: '/0 - 100/2048-multitask_new.html' },
     { name: '2048', link: '/0 - 100/2048_new.html' },
     { name: '3d car simulator', link: '/0 - 100/3d-car-simulator_new.html' },
@@ -439,9 +438,6 @@ function games() {
     { name: 'snowball io', link: '/faveret/Snowball_io.html' },
     { name: 'time shooter 3 SWAT', link: '/faveret/Time_Shooter_3_SWAT.html' },
 
-    { name: '1v1-lol-2', link: '/game-new1/1v1-lol-2_new.html' },
-    { name: '1v1-lol-3', link: '/game-new1/1v1-lol-3_new.html' },
-    { name: '1v1-lol-4', link: '/game-new1/1v1-lol-4_new.html' },
     { name: '1v1-lol-offline', link: '/game-new1/1v1-lol-offline_new.html' },
     { name: '2-minute-football', link: '/game-new1/2-minute-football_new.html' },
     { name: '3d-monster-truck-skyroads', link: '/game-new1/3d-monster-truck-skyroads_new.html' },
