@@ -97,4 +97,5 @@ if (window.sessionStorage.background == "gra"){
 }
 
 
+
 // this script is allso in game_asete/game.js
