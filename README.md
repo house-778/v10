@@ -16,3 +16,5 @@ An Unblock game website
 |  2      | :x:                | password added            |
 |  1      | :x:                | Game added                |
 |  x1     | :x:                | One game added            |
+
+For our terms and condishios [click here](https://house-778.github.io/tc.html'
