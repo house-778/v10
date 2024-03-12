@@ -52,6 +52,7 @@ h2{
 body.dark button,
 body.dark input[type=password],
 body.dark input[type=text],
+body.dark input[type=search],
 body.dark #searchInput {
   background-color: #d8d7d7;
   border: 1px solid #535353;
@@ -65,6 +66,7 @@ body.dark #searchInput {
 body.gra button,
 body.gra input[type=password],
 body.gra input[type=text],
+body.gra input[type=search],
 body.gra #searchInput {
   background-color: #000000;
   border: 1px solid #555555;
@@ -78,6 +80,7 @@ body.gra #searchInput {
 body.light button,
 body.light input[type=password],
 body.light input[type=text],
+body.light input[type=search],
 body.light #searchInput {
   background-color: #000000;
   border: 1px solid #535353;
@@ -107,24 +110,20 @@ iframe{
   height: 100vh;
   width: 100%;
   cursor: pointer;
-  background: linear-gradient(45deg, #000000, #949494, #535353, #000000);
+  background: #000;
   background-size: 400% 400%;
-  animation: gradientAnimation 15s infinite;
   overflow-x: hidden;
   background-attachment: fixed;
-  overflow-y: hidden;
 }
 
 .light{
   height: 100vh;
   width: 100%;
   cursor: pointer;
-  background: linear-gradient(45deg, #ffffff, #bbbbbb, #c9c9c9, #ffffff);
+  background: #fff;
   background-size: 400% 400%;
-  animation: gradientAnimation 15s infinite;
   overflow-x: hidden;
   background-attachment: fixed;
-  overflow-y: hidden;
 }
 
 @keyframes gradientAnimation {
