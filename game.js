@@ -40,7 +40,7 @@ function createButtons() {
   urls.forEach(url => {
     const button = document.createElement('button');
     button.textContent = getCleanButtonText(url);
-    button.setAttribute('src', url);
+    button.setAttribute('onclick', "window.loaction.href = '"+url+"'");
     container.append(button);
   });
 }
